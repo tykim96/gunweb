@@ -1,0 +1,35 @@
+{
+    "name": "gunweb",
+    "version": "1.0.0",
+    "description": "web_study for dongaUniv.",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --exec babel-node init.js --delay 2"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/armenpo/webstudy.git"
+    },
+    "author": "armenpo",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/armenpo/webstudy/issues"
+    },
+    "homepage": "https://github.com/armenpo/webstudy#readme",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "cookie-parser": "^1.4.4",
+        "express": "^4.17.1",
+        "helmet": "^3.21.2",
+        "morgan": "^1.9.1"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.11.0",
+        "@babel/node": "^7.10.5",
+        "@babel/preset-env": "^7.11.0",
+        "babel-core": "^6.26.3",
+        "babel-preset-es2015": "^6.24.1",
+        "dotenv": "^8.2.0",
+        "nodemon": "^2.0.4"
+    }
+}

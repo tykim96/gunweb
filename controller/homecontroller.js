@@ -44,13 +44,4 @@ export const handleJoin = async(req, res) => {
         const users = await User.create(newUser);
         res.send("Join" + req.body.id + req.body.pw + req.body.ph);
     }
-
-
-};
-
-export const handlefind = async(req, res) => {
-    res.send("Join");
-    const userId = req.body.id;
-
-
 };

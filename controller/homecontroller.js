@@ -54,6 +54,7 @@ export const handleJoin = async(req, res) => {
             b = false;
         }
     }
+
     if (b == true) {
         var newUser = {
             id: userId,
@@ -61,6 +62,6 @@ export const handleJoin = async(req, res) => {
             ph: userPh
         }
         const users = await User.create(newUser);
-        res.send("Join" + req.body.id + ' ' + userPw + ' ' + req.body.ph);
+        res.send("Join" + ' ' + users + ' ' + newUser);
     }
 };

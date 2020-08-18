@@ -52,12 +52,11 @@ export const handleJoin = async(req, res) => {
     }
 
     if (b == true) {
-        var newUser = {
+        const users = await User.create({
             id: userId,
             pw: userPw,
             ph: userPh
-        }
-        const users = await User.create(newUser);
+        });
         res.send("Join" + ' ' + users + ' ' + newUser);
     }
 };

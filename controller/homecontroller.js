@@ -27,7 +27,6 @@ const decipher = (password, key) => { //해독
     console.log(decodeResult)
 }
 
-
 export const handleJoin = async(req, res) => {
     // const userId = req.body.id;
     // const userPw = req.body.pw;
@@ -41,9 +40,6 @@ export const handleJoin = async(req, res) => {
     const userId = req.body.id;
     const userPw = cipher(req.body.pw, key);
     const userPh = req.body.ph;
-    console.log(req.body.id);
-    console.log(userPw);
-    console.log(req.body.ph);
 
     var b = true;
 
